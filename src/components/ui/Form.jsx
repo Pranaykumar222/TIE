@@ -33,7 +33,7 @@ const Form = () => {
       [name]: value
     }));
 
-    // Clear error when user starts typing
+    
     if (errors[name]) {
       setErrors(prev => ({
         ...prev,
@@ -90,7 +90,7 @@ const Form = () => {
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </Typography>
 
-        {/* Username */}
+      
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '42px' }}>
           <Typography
             sx={{
@@ -128,7 +128,7 @@ const Form = () => {
           />
         </Box>
 
-        {/* Password */}
+        
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
           <Typography
             sx={{
@@ -178,7 +178,7 @@ const Form = () => {
           />
         </Box>
 
-        {/* Submit Button */}
+        
         <Button
           type="submit"
           variant="contained"

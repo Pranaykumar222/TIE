@@ -22,7 +22,6 @@ const Welcome = () => {
               alignItems: "center",
             }}
           >
-            {/* Welcome Text Section */}
             <Box
               sx={{
                 display: "flex",
@@ -71,7 +70,6 @@ const Welcome = () => {
               </Typography>
             </Box>
 
-            {/* Profile Image */}
             <Box
               component="img"
               src={Profilephoto}
@@ -95,4 +93,3 @@ const Welcome = () => {
 };
 
 export default Welcome;
-

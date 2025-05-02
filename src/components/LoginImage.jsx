@@ -7,17 +7,9 @@ function LoginImage() {
   return (
     <Box
       sx={{
-        width: {
-          lg: '738px',
-        },
-        height: {
-          lg: '80vh',
-          xl: '750px', 
-        },
-        marginTop: {
-          lg: '38px',
-        },
-        color: '#C4C4C4',
+        width: '738px',
+        height: '680px', // Reduced height
+        mt: '20px',
       }}
     >
       <Box
@@ -27,6 +19,7 @@ function LoginImage() {
           backgroundImage: `linear-gradient(rgba(0, 153, 158, 0.5), rgba(198, 253, 255, 0.5)), url(${LoginImg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
           borderRadius: '29px',
           display: 'flex',
           alignItems: 'flex-end',
@@ -34,18 +27,9 @@ function LoginImage() {
       >
         <Box
           sx={{
-            width: {
-              
-              lg: '435px',
-            },
-            mb: {
-              
-              lg: 6,
-            },
-            ml: {
-              
-              lg: '68px',
-            },
+            width: '435px',
+            mb: 6,
+            ml: '68px',
             display: 'flex',
             flexDirection: 'column',
             gap: '5px',
@@ -54,13 +38,8 @@ function LoginImage() {
           <Typography
             sx={{
               color: '#FFFFFF',
-              fontSize: {
-                xs: '20px',
-                sm: '26px',
-                md: '30px',
-                lg: '37px',
-              },
-              fontWeight: '700',
+              fontSize: '37px',
+              fontWeight: 700,
               fontFamily: 'Poppins',
             }}
           >
@@ -69,13 +48,8 @@ function LoginImage() {
           <Typography
             sx={{
               color: '#FFFFFF',
-              fontSize: {
-                xs: '14px',
-                sm: '18px',
-                md: '22px',
-                lg: '25px',
-              },
-              fontWeight: '400',
+              fontSize: '25px',
+              fontWeight: 400,
               fontFamily: 'Poppins',
             }}
           >
@@ -88,4 +62,5 @@ function LoginImage() {
 }
 
 export default LoginImage;
+
 

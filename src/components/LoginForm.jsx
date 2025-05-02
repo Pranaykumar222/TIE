@@ -14,25 +14,23 @@ function LoginForm() {
 
   return (
     <>
+      {/* Logo positioned at top-right */}
       <img
         src={logo}
         alt="Logo"
         style={{
-          width: '160.58px',
-          height: '111px',
           position: 'absolute',
-          top: '-9px',
-          right: '0.25px',
+          top: '20px',  // Distance from top
+          right: '20px',  // Distance from right
+          width: '160.58px',  // Adjust size of logo
+          height: '111px',  // Adjust size of logo
         }}
       />
 
-      
+      {/* Form container */}
       <Box
         sx={{
-          position: 'absolute',
-          right: '94px',
-          top: '54%',
-          transform: 'translateY(-50%)',
+          position: 'relative',  // Ensures the form is positioned relative to the screen
           width: {
             xl: '500px',
             lg: '450px',
@@ -45,23 +43,28 @@ function LoginForm() {
             sm: 'auto',
             xs: 'auto',
           },
-          
           padding: '20px',
           borderRadius: '8px',
-          display:'flex',
-          justifyContent:'center'
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          marginTop: '30px',  // Adjusted margin for visual balance
+          marginBottom: '30px',  // Added space at the bottom for visual balance
         }}
       >
-        
         <Box
-      sx={{
-        width: '329px', 
-        height: '59px', 
-        borderRadius: '7px', 
-        padding: '16px', 
-      }}
-    >
-     <Typography
+          sx={{
+            width: '100%',
+            maxWidth: '329px',
+            height: 'auto',
+            padding: '16px',
+            borderRadius: '7px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '16px',
+          }}
+        >
+          <Typography
             sx={{
               color: '#000000',
               fontSize: {
@@ -72,20 +75,23 @@ function LoginForm() {
               },
               fontWeight: '400',
               fontFamily: 'Poppins',
-              textAlign:'center'
+              textAlign: 'center',
             }}
           >
-            Welcome toTiE
+            Welcome to TiE
           </Typography>
+
           <LoginRegisterBox 
             activeButton={activeButton}
             onButtonClick={handleButtonClick}
           />
+
           <Form isLogin={activeButton === 'login'} />
-    </Box>
+        </Box>
       </Box>
     </>
   );
 }
 
 export default LoginForm;
+
