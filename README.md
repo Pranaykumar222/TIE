@@ -1,12 +1,39 @@
-# React + Vite
+# Taksheela
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Taksheela is a modern web application built with React 19, Vite, and Material UI, designed to deliver a fast and intuitive user experience. It leverages the latest React ecosystem features and a modular architecture to ensure scalability and maintainability.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React 19 with concurrent rendering support
+- ⚡ Blazing-fast development with Vite
+- 🎨 Elegant UI using MUI (Material UI)
+- 🚦 Client-side routing with React Router v7
+- 🎯 Icon support with Lucide React
+- ✅ ESLint integration for code quality
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React 19, Vite
+- **Styling:** MUI (Material UI), Emotion
+- **Routing:** React Router DOM v7
+- **Icons:** Lucide React
+- **Linting:** ESLint
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed:
+```bash
+node -v
+npm -v
+
+git clone https://github.com/Pranaykumar222/TIE.git
+cd TIE
+
+npm install
+
+npm run dev
+
+http://localhost:5173
+
