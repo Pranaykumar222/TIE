@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Box, Typography, Chip } from '@mui/material';
-import CircleWithTextBox from './CircleWithTextBox'; // Import the child component
+import CircleWithTextBox from './CircleWithTextBox'; 
 
 const AttendanceRateCard = ({ title, data, chipLabel = "20%" }) => {
   return (
@@ -54,16 +54,16 @@ const AttendanceRateCard = ({ title, data, chipLabel = "20%" }) => {
             display="flex" 
             flexDirection="column" 
             alignItems="center" 
-            justifyContent="center" // Ensures content is centered
-            gap="4px" // Space between items
+            justifyContent="center" 
+            gap="4px" 
           >
             {data.map((item, index) => (
               <Box 
                 key={index} 
                 display="flex" 
-                justifyContent="center"  // Horizontally center content
-                alignItems="center"  // Vertically center content
-                width="100%"  // Ensure items span the available width
+                justifyContent="center" 
+                alignItems="center"  
+                width="100%" 
               >
                 <CircleWithTextBox label={item.label} count={item.highlight} />
               </Box>

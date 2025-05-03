@@ -30,7 +30,7 @@ const Navbar = () => {
   const isMdScreen = useMediaQuery(theme.breakpoints.down('lg'));
 
   const handleLogout = () => {
-    logout(); // Make sure this function is defined
+    logout(); 
     navigate('/login');
   };
 
@@ -50,7 +50,7 @@ const Navbar = () => {
     setSearchMobileOpen(!searchMobileOpen);
   };
 
-  // Calculate dynamic width based on screen size
+  
   const getAppBarWidth = () => {
     if (isXsScreen) {
       return '100%';
@@ -79,7 +79,7 @@ const Navbar = () => {
         borderBottom: '1px solid #e0e0e0',
         display: 'flex',
         justifyContent: 'center',
-        zIndex: (theme) => theme.zIndex.drawer - 1, // Lower than drawer to prevent overlap
+        zIndex: (theme) => theme.zIndex.drawer - 1, 
       }}
     >
       <Toolbar sx={{ 
@@ -89,9 +89,9 @@ const Navbar = () => {
         padding: 0,
         minHeight: { xs: '70px', sm: '80px', md: '87px' }, 
         width: '100%',
-        ml: isXsScreen ? '48px' : 0, // Add margin when menu icon is present
+        ml: isXsScreen ? '48px' : 0, 
       }}>
-        {/* Search Bar - Hidden on very small screens unless search is toggled */}
+        
         {(!isXsScreen || (isXsScreen && searchMobileOpen)) && (
           <Box
             sx={{
@@ -132,7 +132,7 @@ const Navbar = () => {
           </Box>
         )}
 
-        {/* Search toggle for mobile */}
+     
         {isXsScreen && !searchMobileOpen && (
           <IconButton 
             onClick={handleSearchToggle}
@@ -142,13 +142,13 @@ const Navbar = () => {
           </IconButton>
         )}
 
-        {/* Right section with profile and buttons */}
+  
         <Box sx={{ 
           display: 'flex', 
           gap: { xs: '4px', sm: '8px', md: '12px' },
           mr:"18px"
         }}>
-          {/* Notifications Button */}
+       
           {!isXsScreen && (
             <IconButton
               sx={{
@@ -163,7 +163,7 @@ const Navbar = () => {
             </IconButton>
           )}
 
-          {/* Profile Button */}
+        
           {!isSmScreen ? (
             <Button
               variant="contained"
@@ -234,7 +234,7 @@ const Navbar = () => {
             </IconButton>
           )}
 
-          {/* Logout Button */}
+         
           {!isXsScreen && (
             <Button
               variant="contained"
@@ -252,7 +252,7 @@ const Navbar = () => {
             </Button>
           )}
 
-          {/* Mobile menu button for very small screens */}
+       
           {isXsScreen && (
             <IconButton
               edge="end"
@@ -268,7 +268,7 @@ const Navbar = () => {
           )}
         </Box>
 
-        {/* Mobile menu */}
+   
         <Menu
           anchorEl={mobileMenuAnchor}
           open={Boolean(mobileMenuAnchor)}

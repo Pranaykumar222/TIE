@@ -14,23 +14,23 @@ function LoginForm() {
 
   return (
     <>
-      {/* Logo positioned at top-right */}
+  
       <img
         src={logo}
         alt="Logo"
         style={{
           position: 'absolute',
-          top: '20px',  // Distance from top
-          right: '20px',  // Distance from right
-          width: '160.58px',  // Adjust size of logo
-          height: '111px',  // Adjust size of logo
+          top: '20px',  
+          right: '20px',  
+          width: '160.58px',  
+          height: '111px',  
         }}
       />
 
-      {/* Form container */}
+     
       <Box
         sx={{
-          position: 'relative',  // Ensures the form is positioned relative to the screen
+          position: 'relative',  
           width: {
             xl: '500px',
             lg: '450px',
@@ -48,8 +48,8 @@ function LoginForm() {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          marginTop: '30px',  // Adjusted margin for visual balance
-          marginBottom: '30px',  // Added space at the bottom for visual balance
+          marginTop: '30px',  
+          marginBottom: '30px',  
         }}
       >
         <Box

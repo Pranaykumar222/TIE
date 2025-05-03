@@ -17,10 +17,10 @@ const Layout = ({ children }) => {
 
   return (
     <Box sx={{ display: 'flex', minHeight: '100vh' }}>
-      {/* Sidebar */}
+  
       <Sidebar mobileOpen={mobileOpen} handleDrawerToggle={handleDrawerToggle} />
 
-      {/* Main content */}
+ 
       <Box
   component="main"
   sx={{
@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
     position: 'relative',
   }}
 >
-  {/* Navbar and mobile menu icon */}
+
   <Box sx={{ position: 'fixed', width: '100%', zIndex: 1100 }}>
     {isXsScreen && (
       <IconButton
@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
     <Navbar />
   </Box>
 
-  {/* Page content */}
+ 
   <Box
     sx={{
       flex: 1,
@@ -66,7 +66,7 @@ const Layout = ({ children }) => {
         sm: '80px',
         md: '80px',
         lg: '40px',
-        xl: '40px', // Add this to support large and extra-large screens
+        xl: '40px', 
       },
     }}
   >

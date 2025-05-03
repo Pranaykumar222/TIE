@@ -7,7 +7,6 @@ import Profile from './pages/Profile';
 import Layout from './components/Layout';
 import { AuthProvider, AuthContext } from './context/AuthContext';
 
-// ✅ ProtectedRoute component
 const ProtectedRoute = ({ children }) => {
   const { user } = useContext(AuthContext);
   return user ? children : <Navigate to="/login" replace />;
@@ -18,10 +17,8 @@ function App() {
     <AuthProvider>
       <Router>
         <Routes>
-          {/* ✅ Explicit login route */}
           <Route path="/login" element={<LoginPage />} />
 
-          {/* ✅ Protected routes */}
           <Route
             path="/dashboard"
             element={
@@ -41,7 +38,6 @@ function App() {
             }
           />
 
-          {/* ✅ Default root redirects to dashboard if logged in */}
           <Route
             path="/"
             element={
@@ -51,7 +47,6 @@ function App() {
             }
           />
 
-          {/* ✅ Catch-all fallback */}
           <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
       </Router>

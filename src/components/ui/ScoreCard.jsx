@@ -57,7 +57,7 @@ const ScoreCard = () => {
       </Box>
       
       
-      {/* Mock Test Rate Section */}
+    
       <Box sx={{ border: '1px solid #00999E', borderRadius: 2, width: '100%' }}>
         <Box 
           display="flex" 
@@ -97,10 +97,10 @@ const ScoreCard = () => {
         </Box>
         
         <Grid container spacing={2} p={{ xs: 1, sm: 2 }}>
-          {/* Score Cards Section */}
+        
           <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: { xs: 'center', md: 'flex-start' } }}>
             <Box sx={{ display: 'flex', p: 1, flexDirection: { xs: 'row', sm: 'row', md: 'column' }, gap: { xs: 2, md: 0 } }}>
-              {/* Last Score */}
+            
               <Box sx={{ width: { xs: '45%', sm: '164px', md: '100%' } }}>
                 <Box 
                   sx={{ 
@@ -167,7 +167,7 @@ const ScoreCard = () => {
                 </Box>
               </Box>
 
-              {/* Target Score */}
+          
               <Box sx={{ width: { xs: '45%', sm: '164px', md: '100%' } }}>
                 <Box 
                   sx={{ 
@@ -236,7 +236,7 @@ const ScoreCard = () => {
             </Box>
           </Grid> 
           
-          {/* Skills Rating Section */}
+       
           <Grid 
             item 
             xs={12} 

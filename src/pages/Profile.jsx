@@ -15,7 +15,6 @@ import { AuthContext } from '../context/AuthContext';
 import { Edit, Upload } from 'lucide-react';
 import Profilephoto from '../assets/Profilephoto.jpg';
 
-const drawerWidth = 0;
 
 const Profile = () => {
   const fileInputRef = useRef(null);
@@ -72,7 +71,7 @@ const Profile = () => {
   return (
     <Box
       sx={{
-        pt: { xs: '80px', sm: '80px', md: '0px' }, // navbar height
+        pt: { xs: '80px', sm: '80px', md: '0px' }, 
         backgroundColor: '#F5F5F5',mt:"90px",
         display:"flex",
         justifyContent:"center",
@@ -91,7 +90,6 @@ const Profile = () => {
         }}
       >
         <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', flexWrap: 'wrap' }}>
-          {/* Profile Picture Section */}
           <Box sx={{ position: 'relative', mb: 4, mr: 4, width: '234px', height: '220px' }}>
             <Box
               sx={{
@@ -144,7 +142,6 @@ const Profile = () => {
             </Box>
           </Box>
 
-          {/* Form Fields Section */}
           <Box sx={{ flex: 1, minWidth: '300px' }}>
             <Grid container spacing={3} direction="column">
               {[
@@ -188,7 +185,6 @@ const Profile = () => {
                 </Grid>
               ))}
 
-              {/* Document Upload */}
               <Grid item xs={12}>
                 <Typography
                   variant="h6"
@@ -235,7 +231,6 @@ const Profile = () => {
                 </Box>
               </Grid>
 
-              {/* Submit Button */}
               <Grid item xs={12} sx={{ textAlign: 'center', mt: 3 }}>
                 <Button
                   variant="contained"

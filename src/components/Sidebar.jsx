@@ -24,7 +24,6 @@ const Sidebar = ({ mobileOpen, handleDrawerToggle }) => {
   const theme = useTheme();
   const isXsScreen = useMediaQuery(theme.breakpoints.down('sm'));
   
-  // Create drawer content that can be reused for both permanent and temporary drawers
   const drawerContent = (
     <>
       <Box sx={{ 
@@ -102,7 +101,6 @@ const Sidebar = ({ mobileOpen, handleDrawerToggle }) => {
           />
         </ListItem>
         
-        {/* Sample additional menu item */}
 
              
       </List>
@@ -111,7 +109,6 @@ const Sidebar = ({ mobileOpen, handleDrawerToggle }) => {
 
   return (
     <>
-      {/* Permanent drawer for larger screens */}
       {!isXsScreen && (
         <Drawer
           variant="permanent"
@@ -134,7 +131,6 @@ const Sidebar = ({ mobileOpen, handleDrawerToggle }) => {
         </Drawer>
       )}
 
-      {/* Temporary drawer for mobile screens */}
       {isXsScreen && (
         <SwipeableDrawer
           variant="temporary"
@@ -155,7 +151,7 @@ const Sidebar = ({ mobileOpen, handleDrawerToggle }) => {
             },
           }}
           ModalProps={{
-            keepMounted: true, // Better mobile performance
+            keepMounted: true,
           }}
         >
           {drawerContent}
