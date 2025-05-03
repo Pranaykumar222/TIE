@@ -8,7 +8,7 @@ function LoginImage() {
     <Box
       sx={{
         width: '738px',
-        height: '680px', // Reduced height
+        height: '680px', 
         mt: '20px',
       }}
     >
